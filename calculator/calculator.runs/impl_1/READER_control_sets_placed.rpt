@@ -1,0 +1,60 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Tue Apr 19 00:06:36 2016
+| Host         : DESKTOP-RDRSAI4 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file READER_control_sets_placed.rpt
+| Design       : READER
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     7 |
+| Unused register locations in slices containing registers |    35 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |           14 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              20 |            5 |
+| Yes          | No                    | No                     |               9 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               8 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------+-------------------+------------------+----------------+
+|       Clock Signal      | Enable Signal |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------------+---------------+-------------------+------------------+----------------+
+|  CDIV/CLK               |               |                   |                1 |              1 |
+|  SEGMENTS_DISPLAY/C_DIV |               |                   |                1 |              2 |
+|  CDIV/CLK               | ENU_IBUF      | COUNT_UNITS/temp  |                1 |              4 |
+|  CDIV/CLK               | ENZ_IBUF      | COUNT_TENS/temp   |                1 |              4 |
+|  C_IBUF_BUFG            | DEB/BTNDB     |                   |                3 |              9 |
+|  C_IBUF_BUFG            |               | DEB/RESET_COUNTER |                5 |             20 |
+|  C_IBUF_BUFG            |               |                   |               12 |             45 |
++-------------------------+---------------+-------------------+------------------+----------------+
+
+

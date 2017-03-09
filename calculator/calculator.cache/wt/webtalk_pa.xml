@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Apr 19 00:27:40 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="a52b2f348ce14cd1920124b320b409b1" type="ProjectID"/>
+<property name="ProjectIteration" value="9" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="1" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="3" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="8" type="JavaHandler"/>
+<property name="ShowView" value="5" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, Program device" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramFpgaDialog_PROGRAM, Program" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 117, 92" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 122, 77" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 141, 231" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 144, 212" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 160, 75" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 196, 76" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 28, 109" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 30, 98" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 338, 253" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 52, 207" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 55, 232" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 57, 215" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 64, 215" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 68, 89" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 69, 80" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 85, 97" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 88, 73" value="1" type="GuiResourceData"/>
+<property name="reader.vhd, 9, 177" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="7" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="6" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

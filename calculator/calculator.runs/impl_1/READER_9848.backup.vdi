@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Apr 18 23:52:43 2016
+# Process ID: 9848
+# Current directory: D:/Projects/fpga/calculator/calculator.runs/impl_1
+# Command line: vivado.exe -log READER.vdi -applog -messageDb vivado.pb -mode batch -source READER.tcl -notrace
+# Log file: D:/Projects/fpga/calculator/calculator.runs/impl_1/READER.vdi
+# Journal file: D:/Projects/fpga/calculator/calculator.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source READER.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1

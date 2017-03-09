@@ -1,0 +1,395 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Apr 19 00:05:48 2016
+# Process ID: 8896
+# Current directory: D:/Projects/fpga/calculator/calculator.runs/synth_1
+# Command line: vivado.exe -log READER.vds -mode batch -messageDb vivado.pb -notrace -source READER.tcl
+# Log file: D:/Projects/fpga/calculator/calculator.runs/synth_1/READER.vds
+# Journal file: D:/Projects/fpga/calculator/calculator.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source READER.tcl -notrace
+Command: synth_design -top READER -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5596 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 266.742 ; gain = 60.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'READER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:10]
+INFO: [Synth 8-3491] module 'FREQ_DIV' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/freqdiv.vhd:6' bound to instance 'CDIV' of component 'FREQ_DIV' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'FREQ_DIV' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/freqdiv.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'FREQ_DIV' (1#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/freqdiv.vhd:10]
+INFO: [Synth 8-3491] module 'DEBOUNCER' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/debouncer.vhd:6' bound to instance 'DEB' of component 'DEBOUNCER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'DEBOUNCER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/debouncer.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'DEBOUNCER' (2#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/debouncer.vhd:11]
+INFO: [Synth 8-3491] module 'DISPLAY' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/display.vhd:6' bound to instance 'SEGMENTS_DISPLAY' of component 'DISPLAY' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'DISPLAY' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/display.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/display.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'DISPLAY' (3#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/display.vhd:13]
+INFO: [Synth 8-3491] module 'tff' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/tff.vhd:4' bound to instance 'COUNT_HUNDREDS' of component 'TFF' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'tff' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/tff.vhd:9]
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/tff.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'tff' (4#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/tff.vhd:9]
+INFO: [Synth 8-3491] module 'deccounter' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/counter.vhd:6' bound to instance 'COUNT_TENS' of component 'DECCOUNTER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'deccounter' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/counter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'deccounter' (5#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/counter.vhd:11]
+INFO: [Synth 8-3491] module 'deccounter' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/counter.vhd:6' bound to instance 'COUNT_UNITS' of component 'DECCOUNTER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:76]
+INFO: [Synth 8-3491] module 'SEGMENT_DECODER' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/decoderbcd.vhd:4' bound to instance 'DECODE_HUNDREDS' of component 'SEGMENT_DECODER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'SEGMENT_DECODER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/decoderbcd.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'SEGMENT_DECODER' (6#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/decoderbcd.vhd:9]
+INFO: [Synth 8-3491] module 'SEGMENT_DECODER' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/decoderbcd.vhd:4' bound to instance 'DECODE_TENS' of component 'SEGMENT_DECODER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:81]
+INFO: [Synth 8-3491] module 'SEGMENT_DECODER' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/decoderbcd.vhd:4' bound to instance 'DECODE_UNITS' of component 'SEGMENT_DECODER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:82]
+INFO: [Synth 8-3491] module 'BCD_TO_BINARY' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/bcdtobinary.vhd:4' bound to instance 'CONV' of component 'BCD_TO_BINARY' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'BCD_TO_BINARY' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/bcdtobinary.vhd:10]
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ADDER' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/adder.vhd:6' bound to instance 'ADD1' of component 'ADDER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/bcdtobinary.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'ADDER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/adder.vhd:12]
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ADDER' (7#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/adder.vhd:12]
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ADDER' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/adder.vhd:6' bound to instance 'ADD2' of component 'ADDER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/bcdtobinary.vhd:38]
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'ADDER' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/adder.vhd:6' bound to instance 'ADD3' of component 'ADDER' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/bcdtobinary.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'BCD_TO_BINARY' (8#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/bcdtobinary.vhd:10]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'registru' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:4' bound to instance 'CONF1' of component 'registru' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'registru' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:11]
+	Parameter N bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'registru' (9#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:11]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'registru' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:4' bound to instance 'CONF2' of component 'registru' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'registru__parameterized1' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:11]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'registru__parameterized1' (9#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:11]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'registru' declared at 'D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:4' bound to instance 'CONF3' of component 'registru' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'registru__parameterized3' [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:11]
+	Parameter N bound to: 4 - type: integer 
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'registru__parameterized3' (9#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/register.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'READER' (10#1) [D:/Projects/fpga/calculator/calculator.srcs/sources_1/imports/src/reader.vhd:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 304.047 ; gain = 97.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 304.047 ; gain = 97.707
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Projects/fpga/calculator/calculator.srcs/constrs_1/new/constrs.xdc]
+Finished Parsing XDC File [D:/Projects/fpga/calculator/calculator.srcs/constrs_1/new/constrs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Projects/fpga/calculator/calculator.srcs/constrs_1/new/constrs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/READER_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/READER_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 591.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DEBOUNCER 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module DISPLAY 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+Module tff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module deccounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module SEGMENT_DECODER 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module ADDER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+Module registru 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module registru__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module registru__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 591.547 ; gain = 385.207
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 591.547 ; gain = 385.207
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 591.547 ; gain = 385.207
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |    65|
+|4     |LUT2   |    10|
+|5     |LUT3   |     2|
+|6     |LUT4   |     4|
+|7     |LUT5   |    22|
+|8     |LUT6   |     7|
+|9     |MUXF7  |     7|
+|10    |FDRE   |    85|
+|11    |IBUF   |     5|
+|12    |OBUF   |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------------+------+
+|      |Instance           |Module                   |Cells |
++------+-------------------+-------------------------+------+
+|1     |top                |                         |   242|
+|2     |  CDIV             |FREQ_DIV                 |    59|
+|3     |  CONF1            |registru                 |     1|
+|4     |  CONF2            |registru__parameterized1 |     5|
+|5     |  CONF3            |registru__parameterized3 |     4|
+|6     |  CONV             |BCD_TO_BINARY            |    10|
+|7     |    ADD3           |ADDER                    |    10|
+|8     |  COUNT_HUNDREDS   |tff                      |     2|
+|9     |  COUNT_TENS       |deccounter               |    16|
+|10    |  COUNT_UNITS      |deccounter_0             |    16|
+|11    |  DEB              |DEBOUNCER                |    54|
+|12    |  SEGMENTS_DISPLAY |DISPLAY                  |    51|
++------+-------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 591.547 ; gain = 97.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 591.547 ; gain = 385.207
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 591.547 ; gain = 385.207
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 591.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 19 00:06:11 2016...
